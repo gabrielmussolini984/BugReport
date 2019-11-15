@@ -1,5 +1,4 @@
 # Bug Report
-> Short blurb about what your product does.
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
@@ -10,9 +9,10 @@ bug reporting system, the application sends email to the system manager if it is
 ![](header.png)
 
 ## Live
-```sh
-https://lab.gabriel984.now.sh/
-```
+
+[https://lab.gabriel984.now.sh/](https://lab.gabriel984.now.sh/)
+
+
 
 ## Integrated with GoogleSpreadSheet
 
