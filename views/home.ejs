@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <title>Semana FullStack Lab</title>
+  <script>
+    // O Navegador + Relogio do Usuario.
+    document.onreadystatechange = () =>{
+      if (document.readyState === 'interactive') {
+        document.getElementById('userAgent').value = window.navigator.userAgent;
+        document.getElementById('userDate').value = new Date;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+          <!-- Background image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <h1 class="card-title text-center">Relatar Bug</h1>
+            <form class="form-signin" method="post">
+              <!-- Name -->
+              <div class="form-label-group">
+                <input id="name" class="form-control" type="text" name="name" placeholder="Name" required autofocus>
+                <label for="name">Nome</label>
+              </div>
+              <!-- Email -->
+              <div class="form-label-group">
+                <input id="email" type="email" name="email" class="form-control" placeholder="Email address" required>
+                <label for="email">Email</label>
+              </div>
+              <hr>
+              <!-- Classification -->
+              <div class="form-label-group">
+                <select id="issueType" name="issueType" class="form-control" required>
+                  <option value="">Classificação</option>
+                  <option value="BUG">Bug</option>
+                  <option value="CRITICAL">Crítico</option>
+                  <option value="ENHANCEMENT">Melhoria</option>
+                </select>
+              </div>
+              <!-- How To Reproduce -->
+              <div class="form-label-group">
+                <input id="howToReproduce" type="text" name="howToReproduce" class="form-control" placeholder="How To Reproduce" required>
+                <label for="howToReproduce">Como reproduzir o erro? </label> 
+              </div>
+              <!-- Expected Output -->
+              <div class="form-label-group">
+                <input id="expectedOutput" type="text" name="expectedOutput" class="form-control" placeholder="Expected Output" required> 
+                <label for="expectedOutput">Qual saida esperada? </label>
+              </div>
+              <!-- Received Output -->
+              <div class="form-label-group">
+                <input id="receivedOutput" type="text" name="receivedOutput" class="form-control" placeholder="Received Output" required>
+                <label for="receivedOutput">Qual saida recebida? </label>
+              </div>
+              <!-- Hidden Input's -->
+              <input type="hidden" id="userAgent" name="userAgent" >
+              <input type="hidden" id="userDate" name="userDate" >
+              <!-- Send Form -->
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Enviar</button>
+              <a href="https://github.com/gabrielmussolini984" target="_blank" class="btn btn-lg btn-github btn-block text-uppercase"><i class="fab fa-github"></i></span>GitHub</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <script src="https://kit.fontawesome.com/6886b99fe4.js" crossorigin="anonymous"></script>
+</body>
+</html>
