@@ -10,7 +10,7 @@ bug reporting system, the application sends email to the system manager if it is
 
 ## Live
 
-[https://lab.gabriel984.now.sh/](https://lab.gabriel984.now.sh/)
+[https://lab.gabriel984.now.sh/](https://bugreport.now.sh/)
 
 
 
